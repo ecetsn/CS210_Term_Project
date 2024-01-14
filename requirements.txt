@@ -1,0 +1,6 @@
+!pip install pandas
+!pip install transformers
+!pip install zemberek-nlp
+!pip install plotly
+!pip install seaborn
+!pip install matplotlib
