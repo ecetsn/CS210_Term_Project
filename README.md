@@ -41,6 +41,11 @@ pip install -r requirements.txt
 ## Findings
 
 ### Sentiment Correlations Findings:
+![img5](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/342872e4-f21f-44b8-a769-9de7f4d68a09)
+![img2](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/e5465bd3-7f57-424f-b895-a27bde3af8f0)
+![img3](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/f22cd989-a7f0-4a2e-ac41-f968b9f14693)
+![img4](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/16f9bb70-f137-4aee-a93c-e72d18d34d3f)
+
 #### Morning vs. Night Sentiment:
 - There is no significant correlation between morning average sentiment and night average sentiment.
 #### Morning vs. Evening Sentiment:
@@ -58,6 +63,11 @@ pip install -r requirements.txt
 The lack of significant correlations in most comparisons suggests that the sentiment during one time slot is generally independent of the sentiment during other time slots. This indicates that factors influencing sentiment may vary throughout the day. However, the significant correlation between evening and noon sentiment implies a potential pattern or similarity in sentiment during these specific time slots. Further investigation into the nature of this correlation may provide valuable insights into factors influencing sentiment during these times. This analysis lays the groundwork for understanding the temporal dynamics of sentiment and can guide future explorations or targeted interventions during specific time slots.
 
 ### Habit Analysis Findings:
+
+![newplot](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/5f0f56ea-6217-4706-8999-2a74b0df53bb)
+
+![img1](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/c406a4e0-950f-4a75-b748-212f3f570f9d)
+
 The total number of messages during different time slots follows the following ranks:
 
 #### Noon:
