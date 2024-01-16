@@ -50,6 +50,26 @@ No user-configurable parameters. The configuration involves installing the requi
 ## API Reference
 No external API is used. The project primarily utilizes Python libraries for sentiment analysis and spell-checking.
 
+## Steps for Analysis
+
+### Sentiment Analysis
+- Data Collection
+  - Collecting conversational data from WhatsApps, ensuring the inclusion of timestamps for each interaction.
+- Data Cleaning
+   - Handle missing values
+   - Convert to lowercase
+   - Remove special characters
+   - Remove links
+   - Tokenization
+   - Remove stopwords
+   - Spell checking
+
+### Habit Analysis
+> After the data collection, the intensity of the conversation is observed according to time and date
+- Get the intensity of messages
+- Observe them by the periods of day
+- Combine this knowledge with the sentiment score of the messages
+
 ## Findings
 
 ### Sentiment Correlations Findings:
