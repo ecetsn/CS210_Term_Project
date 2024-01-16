@@ -3,7 +3,7 @@
 
 A project that conducts sentiment analysis on WhatsApp messages, exploring patterns and intensity of communication throughout the day.
 
-## Installing / Getting started
+## Installing / Getting Started
 
 To get started, clone the project and navigate to the project directory. Install the required dependencies:
 
@@ -54,7 +54,7 @@ No external API is used. The project primarily utilizes Python libraries for sen
 
 ### Sentiment Analysis
 - Data Collection
-  - Collecting conversational data from WhatsApps, ensuring the inclusion of timestamps for each interaction.
+  - Collecting conversational data from WhatsApp, ensuring the inclusion of timestamps for each interaction.
 - Data Cleaning
    - Handle missing values
    - Convert to lowercase
@@ -63,18 +63,21 @@ No external API is used. The project primarily utilizes Python libraries for sen
    - Tokenization
    - Remove stopwords
    - Spell checking
+     - Set the environment for Spell Checking using ZEMBEREK Turkish NLP
+- Sentiment Analysis
+  - Set the environment for Sentiment Analysis using BERT-based Turkish Mode 
 
 ### Habit Analysis
 > After the data collection, the intensity of the conversation is observed according to time and date
 - Get the intensity of messages
-- Observe them by the periods of day
+- Observe them by the periods of the day
 - Combine this knowledge with the sentiment score of the messages
 
 ## Findings
 
 ### Sentiment Correlations Findings:
 
-#### Analysis of Weighted Sentiment Over Time to Derive a Correlation Heapmap
+#### Analysis of Weighted Sentiment Over Time to Derive a Correlation Heatmap
 In this analysis, I examine the trends in weighted sentiment over time by grouping the data based on date and time slots. The weighted sentiment is calculated and averaged for each group, resulting in a pivot table that provides insights into sentiment patterns during different times of the day.
 
 ![img5](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/342872e4-f21f-44b8-a769-9de7f4d68a09)
@@ -88,13 +91,13 @@ In this analysis, a table containing sentiment scores for every message is prese
 
 ![img3](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/f22cd989-a7f0-4a2e-ac41-f968b9f14693)
 
-- The table provides a comprehensive view of positive sentiment scores for each messages
+- The table provides a comprehensive view of positive sentiment scores for each message
 
 ![img4](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/16f9bb70-f137-4aee-a93c-e72d18d34d3f)
 
-- The table provides a comprehensive view of negative sentiment scores for each messages
+- The table provides a comprehensive view of negative sentiment scores for each message
 
-> these findings on sentiment correlation are used to test my hypothesis
+> These findings on sentiment correlation are used to test my hypothesis
 
 ## Hypothesis Testing
 ### Null Hypothesis(H0)
@@ -108,7 +111,7 @@ The `pearsonr`  function is utilized to calculate both correlation coefficients 
 #### Purpose:
 - The Pearson correlation test is employed to understand the strength and direction of the linear relationship between two variables. This analysis provides insight into whether changes in one variable are associated with systematic changes in another.
 #### Method:
-- The code snippet utilizes the pearsonr function from the scipy.stats library to conduct hypothesis testing based on the Pearson correlation coefficient. This coefficient is employed to measure the linear relationship between two variables, providing insights into the strength and direction of their association. The accompanying p-value assists in evaluating the statistical significance of the observed correlation.
+- The code snippet utilizes the `pearsonr` function from the `scipy.stats` library to conduct hypothesis testing based on the Pearson correlation coefficient. This coefficient is employed to measure the linear relationship between two variables, providing insights into the strength and direction of their association. The accompanying p-value assists in evaluating the statistical significance of the observed correlation.
 
 - In this context, the null hypothesis posits that there is no correlation between the specified pairs of variables. The code then calculates the p-value associated with the correlation coefficients for morning vs. night average sentiment and evening vs. noon average sentiment. The significance level (alpha) is set to 0.05, a commonly used threshold in hypothesis testing.
 
@@ -128,7 +131,7 @@ The `pearsonr`  function is utilized to calculate both correlation coefficients 
 - There is a **significant** correlation between evening average sentiment and noon average sentiment.
 
 ### Interpretation:
-The lack of significant correlations in most comparisons suggests that the sentiment during one time slot is generally independent of the sentiment during other time slots. This indicates that factors influencing sentiment may vary throughout the day. However, the significant correlation between evening and noon sentiment implies a potential pattern or similarity in sentiment during these specific time slots. Further investigation into the nature of this correlation may provide valuable insights into factors influencing sentiment during these times. This analysis lays the groundwork for understanding the temporal dynamics of sentiment and can guide future explorations or targeted interventions during specific time slots.
+The lack of significant correlations in most comparisons suggests that the sentiment during one-time slot is generally independent of the sentiment during other time slots. This indicates that factors influencing sentiment may vary throughout the day. However, the significant correlation between evening and noon sentiment implies a potential pattern or similarity in sentiment during these specific time slots. Further investigation into the nature of this correlation may provide valuable insights into factors influencing sentiment during these times. This analysis lays the groundwork for understanding the temporal dynamics of sentiment and can guide future explorations or targeted interventions during specific time slots.
 
 ### Habit Analysis Findings:
 
