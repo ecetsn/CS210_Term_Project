@@ -38,6 +38,18 @@ pip install -r requirements.txt
 - Ensure the availability of WhatsApp data for analysis.
 - Run the notebook in a Jupyter environment, following each step.
 
+## Building
+No additional building steps are required for this project.
+
+## Deploying / Publishing
+No specific deployment steps are needed as this project primarily focuses on analysis and exploration.
+
+## Configuration
+No user-configurable parameters. The configuration involves installing the required dependencies and setting up the environment.
+
+## API Reference
+No external API is used. The project primarily utilizes Python libraries for sentiment analysis and spell-checking.
+
 ## Findings
 
 ### Sentiment Correlations Findings:
@@ -110,29 +122,6 @@ The observed ranks in messaging intensity provide valuable insights into my mess
 
 > Understanding these patterns can help me manage my communication effectively and adapt to the natural rhythm of my messaging behaviour throughout the day.
 
-## Building
-No additional building steps are required for this project.
-
-## Deploying / Publishing
-No specific deployment steps are needed as this project primarily focuses on analysis and exploration.
-
-## Versioning
-We use SemVer for versioning. For the versions available, see the link to tags on this repository.
-
-## Configuration
-No user-configurable parameters. The configuration involves installing the required dependencies and setting up the environment.
-
-## Tests
-Tests are not implemented for this project as it focuses on exploratory data analysis.
-
-## Style guide
-The code follows PEP 8 style guidelines. You can check it using tools like flake8.
-
-## API Reference
-No external API is used. The project primarily utilizes Python libraries for sentiment analysis and spell-checking.
-
-## Database
-No external database is used for this project. It mainly involves processing and analyzing text data.
 
 ## Licensing
 This project is licensed under the MIT License. For details, refer to the LICENSE file.
