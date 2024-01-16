@@ -79,10 +79,20 @@ In this analysis, I examine the trends in weighted sentiment over time by groupi
 
 ![img5](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/342872e4-f21f-44b8-a769-9de7f4d68a09)
 
-#### Box plottings to visualize the correlation better
+#### Sentiment Scores Overview
+In this analysis, a table containing sentiment scores for every message is presented. The sentiment scores were calculated using the BERT-Turkish model. This table serves as the foundation for hypothesis testing to explore patterns and trends in sentiment across different time slots.
+
 ![img2](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/e5465bd3-7f57-424f-b895-a27bde3af8f0)
+
+- The table provides a comprehensive view of sentiment scores for each message. These scores include both positive and negative values, allowing for a detailed examination of the sentiment distribution.
+
 ![img3](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/f22cd989-a7f0-4a2e-ac41-f968b9f14693)
+
+- The table provides a comprehensive view of positive sentiment scores for each messages
+
 ![img4](https://github.com/ecetsn/CS210_Term_Project/assets/26511196/16f9bb70-f137-4aee-a93c-e72d18d34d3f)
+
+- The table provides a comprehensive view of negative sentiment scores for each messages
 
 > these findings on sentiment correlation are used to test my hypothesis
 
